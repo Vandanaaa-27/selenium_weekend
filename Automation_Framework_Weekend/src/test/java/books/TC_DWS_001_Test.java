@@ -16,6 +16,7 @@ import objectrepository.HomePage;
 public class TC_DWS_001_Test extends BaseClass  {
 	@Test
 	public void clickOnBooks() {
+		WebDriver driver = new ChromeDriver();
 		ExtentTest test = ereport.createTest("clickOnBooks");
 		HomePage hp = new HomePage(driver);
 		hp.getBooksLink().click();
@@ -24,3 +25,4 @@ public class TC_DWS_001_Test extends BaseClass  {
 	}
 
 }
+
